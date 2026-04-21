@@ -2,8 +2,12 @@ describe('SigFig: Mic Test', function()
 {
   it('SigFig: Audio Mocking Test', async function ()
   {
+    const env = process.env.ENV;
+    const testUrl = process.env.TEST_URL;
 
-    await browser.url('https://mictests.com/check')
+    console.log("[Config] Environment:", env);
+    console.log("[Config] Test URL:", testUrl);
+    await browser.url(testUrl)
     const micBtn = $('#mic-launcher');
     await browser.pause(10000);
     console.log("mic-launcher removed. Proceeding...");

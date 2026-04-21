@@ -1,5 +1,10 @@
 import fs from 'fs';
 import path from 'path';
+import dotenv from 'dotenv';
+
+/* Load environment file */
+const env = process.env.TEST_ENV || 'mobile';
+dotenv.config({ path: `.env.${env}` });
 
 export const config = {
 
