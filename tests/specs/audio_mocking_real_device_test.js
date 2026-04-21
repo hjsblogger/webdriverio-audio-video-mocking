@@ -2,7 +2,7 @@ describe('SigFig: Mic Test', function()
 {
   it('SigFig: Audio Mocking Test', async function ()
   {
-    const env = process.env.ENV;
+    const env = process.env.TEST_ENV;
     const testUrl = process.env.TEST_URL;
 
     console.log("[Config] Environment:", env);
