@@ -35,7 +35,7 @@ export const config = {
   ],
 
    capabilities: [{
-        browserName: 'MicrosoftEdge',
+        browserName: 'Chrome',
         browserVersion: 'latest',
         platformName: 'Windows 11',
 
